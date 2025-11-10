@@ -3,7 +3,7 @@
  */
 import { IndexedEntity } from "./core-utils";
 import type { User, Chat, ChatMessage, Inquiry } from "@shared/types";
-import { MOCK_CHAT_MESSages, MOCK_CHATS, MOCK_USERS } from "@shared/mock-data";
+import { MOCK_CHAT_MESSAGES, MOCK_CHATS, MOCK_USERS } from "@shared/mock-data";
 // USER ENTITY: one DO instance per user
 export class UserEntity extends IndexedEntity<User> {
   static readonly entityName = "user";
@@ -15,7 +15,7 @@ export class UserEntity extends IndexedEntity<User> {
 export type ChatBoardState = Chat & { messages: ChatMessage[] };
 const SEED_CHAT_BOARDS: ChatBoardState[] = MOCK_CHATS.map(c => ({
   ...c,
-  messages: MOCK_CHAT_MESSAGES.filter(m => m.chatId === c.id),
+  messages: MOCK_CHAT_MESSAGES.filter((m: ChatMessage) => m.chatId === c.id),
 }));
 export class ChatBoardEntity extends IndexedEntity<ChatBoardState> {
   static readonly entityName = "chat";

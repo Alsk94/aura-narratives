@@ -2,8 +2,9 @@ import { MainLayout } from '@/components/layout/MainLayout';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { services } from '@/lib/mock-content';
 import { motion, Variants } from 'framer-motion';
-import { Megaphone, Users, PenTool, Clapperboard, Mic } from 'lucide-react';
+import { Megaphone, Users, PenTool, Clapperboard, Mic, Star } from 'lucide-react';
 import React from 'react';
+import { cn } from '@/lib/utils';
 const iconMap: { [key: string]: React.ElementType } = {
   Megaphone,
   Users,
@@ -12,6 +13,8 @@ const iconMap: { [key: string]: React.ElementType } = {
   Mic,
 };
 export function ServicesPage() {
+  const storytellingService = services.find(s => s.title === 'Storytelling');
+  const otherServices = services.filter(s => s.title !== 'Storytelling');
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -59,7 +62,26 @@ export function ServicesPage() {
           initial="hidden"
           animate="visible"
         >
-          {services.map((service) => {
+          {storytellingService && (
+            <motion.div className="md:col-span-2 lg:col-span-3" variants={itemVariants}>
+              <Card className="h-full bg-gradient-to-br from-brand-accent/10 to-brand-bg border-brand-accent/30 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
+                <div className="absolute top-4 right-4 bg-brand-accent text-white text-xs font-bold uppercase px-3 py-1 rounded-full flex items-center gap-1">
+                  <Star className="w-3 h-3" />
+                  <span>Enterprise Focus</span>
+                </div>
+                <CardHeader className="p-8">
+                  <div className="mb-4">
+                    <PenTool className="w-12 h-12 text-brand-accent" />
+                  </div>
+                  <CardTitle className="text-3xl font-bold text-brand-text">{storytellingService.title}</CardTitle>
+                  <CardDescription className="text-lg text-brand-text/80 pt-2 leading-relaxed max-w-4xl">
+                    {storytellingService.description}
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </motion.div>
+          )}
+          {otherServices.map((service) => {
             const IconComponent = iconMap[service.icon];
             return (
               <motion.div key={service.title} variants={itemVariants}>

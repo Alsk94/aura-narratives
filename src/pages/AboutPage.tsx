@@ -5,7 +5,7 @@ export function AboutPage() {
     <MainLayout>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-16 md:py-24 lg:py-32">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -25,9 +25,9 @@ export function AboutPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              <img 
-                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2232&auto=format&fit=crop" 
-                alt="Team collaborating" 
+              <img
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop"
+                alt="Team collaborating in a modern office"
                 className="rounded-lg shadow-2xl object-cover aspect-[4/3]"
               />
             </motion.div>
@@ -70,9 +70,9 @@ export function AboutPage() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="md:order-1"
             >
-              <img 
-                src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop" 
-                alt="Strategic planning session" 
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
+                alt="Strategic planning session with sticky notes"
                 className="rounded-lg shadow-2xl object-cover aspect-[4/3]"
               />
             </motion.div>

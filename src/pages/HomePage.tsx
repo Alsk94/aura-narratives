@@ -15,6 +15,9 @@ const iconMap: { [key: string]: React.ElementType } = {
 };
 export function HomePage() {
   const featuredPosts = blogPosts.slice(0, 2);
+  const storytellingService = services.find(s => s.title === 'Storytelling');
+  const otherFeaturedServices = services.filter(s => s.title !== 'Storytelling').slice(0, 2);
+  const featuredServices = storytellingService ? [storytellingService, ...otherFeaturedServices] : services.slice(0, 3);
   return (
     <MainLayout>
       {/* Hero Section */}
@@ -63,7 +66,7 @@ export function HomePage() {
             </p>
           </div>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.slice(0, 3).map((service) => {
+            {featuredServices.map((service) => {
               const IconComponent = iconMap[service.icon];
               return (
                 <motion.div

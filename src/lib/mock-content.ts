@@ -13,7 +13,7 @@ export const services: Service[] = [
   {
     icon: 'PenTool',
     title: 'Storytelling',
-    description: 'Developing authentic, resonant stories that connect with your audience on an emotional level and drive brand loyalty.',
+    description: 'Developing authentic, resonant corporate narratives that align with strategic business objectives, enhance market positioning, and drive stakeholder engagement to build lasting brand equity.',
   },
   {
     icon: 'Clapperboard',
@@ -50,7 +50,7 @@ export const blogPosts: BlogPost[] = [
     author: 'Aura Narratives',
     date: 'October 26, 2023',
     excerpt: 'Discover key strategies to prepare for, navigate, and excel in any media interview, turning every opportunity into a win for your brand.',
-    imageUrl: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop',
     content: `
       <p>In the world of media engagement, the interview is a pivotal moment. It's a direct line to your audience, a chance to shape perception, and an opportunity to establish your authority. But for many, it's a source of anxiety. The key to transforming this pressure into performance lies in preparation and technique. Here, we unveil the art of the interview.</p>
       <h2>1. Master Your Message</h2>
@@ -68,7 +68,7 @@ export const blogPosts: BlogPost[] = [
     author: 'Aura Narratives',
     date: 'September 15, 2023',
     excerpt: 'Learn how to move beyond jargon and create a compelling brand story that captures hearts, minds, and markets.',
-    imageUrl: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1973&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop',
     content: `
       <p>In a saturated market, a good product isn't enough. You need a story. A narrative. But what does that actually mean? It's more than a mission statement or a list of features. A powerful brand narrative is the emotional thread that connects what you do with why it matters to your audience.</p>
       <h2>The Three Pillars of a Strong Narrative</h2>
@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
     author: 'Aura Narratives',
     date: 'August 02, 2023',
     excerpt: 'In a noisy world, silence is not golden. We explore why developing a consistent and authentic brand voice is critical for cutting through the clutter.',
-    imageUrl: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop',
     content: `
       <p>What does your brand sound like? If you can't answer that question, you have a problem. A brand's voice is its personality, its unique way of communicating with the world. Without it, your content is just a collection of words, easily ignored and forgotten. A consistent brand voice, however, builds trust, fosters recognition, and creates a sense of community.</p>
       <h2>Defining Your Tone</h2>
