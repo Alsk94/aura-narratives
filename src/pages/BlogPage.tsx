@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import { MainLayout } from '@/components/layout/MainLayout';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { blogPosts } from '@/lib/mock-content';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 export function BlogPage() {
-  const containerVariants: Variants = {
+  const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -14,7 +14,7 @@ export function BlogPage() {
       },
     },
   };
-  const itemVariants: Variants = {
+  const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
@@ -28,8 +28,8 @@ export function BlogPage() {
   return (
     <MainLayout>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="py-16 sm:py-20 md:py-24 text-center">
-          <motion.h1
+        <div className="py-16 md:py-24 lg:py-32 text-center">
+          <motion.h1 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -37,7 +37,7 @@ export function BlogPage() {
           >
             Insights & Ideas
           </motion.h1>
-          <motion.p
+          <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -46,8 +46,8 @@ export function BlogPage() {
             Explore our latest articles on storytelling, media strategy, and brand communication.
           </motion.p>
         </div>
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-16 sm:pb-20 md:pb-24"
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-16 md:pb-24 lg:pb-32"
           variants={containerVariants}
           initial="hidden"
           animate="visible"

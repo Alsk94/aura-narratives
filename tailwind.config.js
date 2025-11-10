@@ -6,6 +6,7 @@ export default {
   	extend: {
   		fontFamily: {
   			sans: [
+  				'Sora',
   				'Inter',
   				'-apple-system',
   				'BlinkMacSystemFont',
@@ -13,6 +14,11 @@ export default {
   				'Roboto',
   				'sans-serif'
   			],
+        serif: [
+          'Merriweather',
+          'Georgia',
+          'serif'
+        ],
   			display: [
   				'Cal Sans',
   				'Inter',
@@ -91,6 +97,9 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+        'brand-bg': 'rgb(var(--brand-bg) / <alpha-value>)',
+        'brand-accent': 'rgb(var(--brand-accent) / <alpha-value>)',
+        'brand-text': 'rgb(var(--brand-text) / <alpha-value>)',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			muted: {
