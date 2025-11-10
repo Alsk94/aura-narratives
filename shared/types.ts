@@ -21,7 +21,7 @@ export interface ChatMessage {
 }
 // Aura Narratives Content Types
 export interface Service {
-  icon: React.ElementType;
+  icon: string;
   title: string;
   description: string;
 }
@@ -38,4 +38,11 @@ export interface BlogPost {
   excerpt: string;
   imageUrl: string;
   content: string;
+}
+export interface Inquiry {
+  id: string;
+  name: string;
+  email: string;
+  message: string;
+  createdAt: number;
 }

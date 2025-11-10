@@ -1,28 +1,27 @@
 import type { Service, Testimonial, BlogPost } from '@shared/types';
-import { Megaphone, Users, PenTool, Clapperboard, Mic } from 'lucide-react';
 export const services: Service[] = [
   {
-    icon: Megaphone,
+    icon: 'Megaphone',
     title: 'Media Engagement',
     description: 'Crafting compelling narratives and securing high-impact media placements to amplify your brand\'s voice and reach.',
   },
   {
-    icon: Users,
+    icon: 'Users',
     title: 'Client Management',
     description: 'Building and nurturing strong client relationships through strategic communication and personalized engagement strategies.',
   },
   {
-    icon: PenTool,
+    icon: 'PenTool',
     title: 'Storytelling',
     description: 'Developing authentic, resonant stories that connect with your audience on an emotional level and drive brand loyalty.',
   },
   {
-    icon: Clapperboard,
+    icon: 'Clapperboard',
     title: 'Content Creation',
     description: 'Producing high-quality, engaging content across various platforms to captivate your audience and achieve your business goals.',
   },
   {
-    icon: Mic,
+    icon: 'Mic',
     title: 'Media Training',
     description: 'Equipping your team with the skills and confidence to deliver powerful, on-message interviews and presentations.',
   },
