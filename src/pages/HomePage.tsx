@@ -3,8 +3,16 @@ import { MainLayout } from '@/components/layout/MainLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { services, testimonials, blogPosts } from '@/lib/mock-content';
-import { ArrowRight, Quote } from 'lucide-react';
+import { ArrowRight, Quote, Megaphone, Users, PenTool, Clapperboard, Mic } from 'lucide-react';
 import { motion } from 'framer-motion';
+import React from 'react';
+const iconMap: { [key: string]: React.ElementType } = {
+  Megaphone,
+  Users,
+  PenTool,
+  Clapperboard,
+  Mic,
+};
 export function HomePage() {
   const featuredPosts = blogPosts.slice(0, 2);
   return (
@@ -14,7 +22,7 @@ export function HomePage() {
         <div className="absolute inset-0 bg-brand-accent/10 rounded-full -translate-x-1/3 -translate-y-1/3" style={{ filter: 'blur(100px)' }}></div>
         <div className="absolute bottom-0 right-0 bg-brand-text/5 rounded-full translate-x-1/3 translate-y-1/3" style={{ filter: 'blur(100px)' }}></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -22,7 +30,7 @@ export function HomePage() {
           >
             Crafting Narratives That Captivate & Compel
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -30,7 +38,7 @@ export function HomePage() {
           >
             Aura Narratives is a premier consultancy dedicated to shaping powerful stories and forging impactful media connections for visionary brands.
           </motion.p>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -55,25 +63,28 @@ export function HomePage() {
             </p>
           </div>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.slice(0, 3).map((service) => (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.5 }}
-              >
-                <Card className="text-center p-8 h-full bg-transparent border-none shadow-none">
-                  <div className="flex justify-center mb-4">
-                    <div className="p-4 bg-brand-accent/10 rounded-full">
-                      <service.icon className="w-10 h-10 text-brand-accent" />
+            {services.slice(0, 3).map((service) => {
+              const IconComponent = iconMap[service.icon];
+              return (
+                <motion.div
+                  key={service.title}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <Card className="text-center p-8 h-full bg-transparent border-none shadow-none">
+                    <div className="flex justify-center mb-4">
+                      <div className="p-4 bg-brand-accent/10 rounded-full">
+                        {IconComponent && <IconComponent className="w-10 h-10 text-brand-accent" />}
+                      </div>
                     </div>
-                  </div>
-                  <h3 className="text-2xl font-bold text-brand-text">{service.title}</h3>
-                  <p className="mt-2 text-base text-brand-text/80">{service.description}</p>
-                </Card>
-              </motion.div>
-            ))}
+                    <h3 className="text-2xl font-bold text-brand-text">{service.title}</h3>
+                    <p className="mt-2 text-base text-brand-text/80">{service.description}</p>
+                  </Card>
+                </motion.div>
+              );
+            })}
           </div>
           <div className="mt-12 text-center">
             <Button asChild variant="link" className="text-lg text-brand-accent hover:underline">
