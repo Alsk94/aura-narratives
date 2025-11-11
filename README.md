@@ -1,6 +1,6 @@
 # Aura Narratives
 
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/Alsk94/aura-narratives)
 
 Aura Narratives is a sophisticated and elegant web presence for a premier media engagement and storytelling consultancy. The platform is designed to establish authority, showcase a range of high-value services, and attract high-caliber clients. The core of the application is a beautifully designed content-driven website featuring sections for services, a company background, a thought-leadership blog, and a client contact portal. The visual identity is built on a warm, professional palette of browns and beiges, paired with a classic serif font for body text and a modern sans-serif for headlines, creating an atmosphere of trust, elegance, and expertise.
 
@@ -93,4 +93,4 @@ This project is designed for seamless deployment to Cloudflare Pages.
 
 Alternatively, you can connect your GitHub repository to Cloudflare Pages for automatic deployments on every push.
 
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/Alsk94/aura-narratives)
