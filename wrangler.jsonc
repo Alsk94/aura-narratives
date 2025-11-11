@@ -4,7 +4,7 @@
  */
  {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "aura-narratives-ykc0fp5umcz9qhbqjhhhk",
+	"name": "vibesdk-productionv1",
 	"main": "worker/index.ts",
 	"compatibility_date": "2025-04-24",
 	"assets": {
