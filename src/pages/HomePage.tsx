@@ -21,7 +21,7 @@ export function HomePage() {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className="relative bg-brand-bg py-20 md:py-32 lg:py-40 overflow-hidden">
+      <section className="relative bg-brand-bg py-20 sm:py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-brand-accent/10 rounded-full -translate-x-1/3 -translate-y-1/3" style={{ filter: 'blur(100px)' }}></div>
         <div className="absolute bottom-0 right-0 bg-brand-text/5 rounded-full translate-x-1/3 translate-y-1/3" style={{ filter: 'blur(100px)' }}></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
@@ -57,7 +57,7 @@ export function HomePage() {
         </div>
       </section>
       {/* Services Section */}
-      <section className="py-16 md:py-24 bg-white/30">
+      <section className="py-16 sm:py-20 md:py-24 bg-white/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-text">Our Core Services</h2>
@@ -97,7 +97,7 @@ export function HomePage() {
         </div>
       </section>
       {/* Testimonials Section */}
-      <section className="py-16 md:py-24 bg-brand-bg">
+      <section className="py-16 sm:py-20 md:py-24 bg-brand-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-text">What Our Clients Say</h2>
@@ -127,7 +127,7 @@ export function HomePage() {
         </div>
       </section>
       {/* Featured Blog Posts Section */}
-      <section className="py-16 md:py-24 bg-white/30">
+      <section className="py-16 sm:py-20 md:py-24 bg-white/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-text">From Our Blog</h2>

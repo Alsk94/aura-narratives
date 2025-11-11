@@ -38,7 +38,7 @@ export function ServicesPage() {
   return (
     <MainLayout>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="py-16 md:py-24 lg:py-32 text-center">
+        <div className="py-16 sm:py-20 md:py-24 text-center">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export function ServicesPage() {
           </motion.p>
         </div>
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-16 md:pb-24 lg:pb-32"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-16 sm:pb-20 md:pb-24"
           variants={containerVariants}
           initial="hidden"
           animate="visible"

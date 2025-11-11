@@ -4,7 +4,7 @@ export function AboutPage() {
   return (
     <MainLayout>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="py-16 md:py-24 lg:py-32">
+        <div className="py-16 sm:py-20 md:py-24">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -18,7 +18,7 @@ export function AboutPage() {
               At Aura Narratives, we are more than just a consultancy; we are architects of perception, champions of authenticity, and partners in your success.
             </p>
           </motion.div>
-          <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div className="mt-12 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -47,7 +47,7 @@ export function AboutPage() {
               </p>
             </motion.div>
           </div>
-          <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div className="mt-12 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}

@@ -45,7 +45,7 @@ export function ContactPage() {
   return (
     <MainLayout>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="py-16 md:py-24 lg:py-32">
+        <div className="py-16 sm:py-20 md:py-24">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ export function ContactPage() {
               We'd love to hear about your project. Let's connect and start crafting your narrative.
             </p>
           </motion.div>
-          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
